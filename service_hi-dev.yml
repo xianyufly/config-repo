@@ -1,2 +1,22 @@
 host:
   ifs: http://www.baidu.com
+eureka:
+  client:
+#    serviceUrl:
+#      defaultZone: http://10.0.1.41:8761/eureka/
+    healthcheck:
+      enabled: true
+server:
+  port: 8762
+spring:
+#  application:
+#    name: service-hi
+  #自动重启
+  devtools:
+      restart:
+        enabled: true
+
+#开启feign的hystrix机制
+feign:
+  hystrix:
+    enabled: true
