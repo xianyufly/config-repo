@@ -1,5 +1,5 @@
 host:
-  ifs: http://www.baidu.com/11
+  ifs: http://www.baidu.com/22
 eureka:
   client:
 #    serviceUrl:
