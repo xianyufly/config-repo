@@ -3,7 +3,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.1.160:3306/kms?&allowMultiQueries=true&useUnicode=true&autoReconnect=true&useOldAliasMetadataBehavior=true
+    url: jdbc%3amysql%3a%2f%2f192.168.1.160%3a3306%2fkms%3f%26allowMultiQueries%3dtrue%26useUnicode%3dtrue%26autoReconnect%3dtrue%26useOldAliasMetadataBehavior%3dtrue
     username: root
     password: 0591xino
     tomcat:
