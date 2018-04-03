@@ -23,5 +23,5 @@ spring:
 mybatis:
    config-location: classpath:config/mybatis/mybatis-config.xml
    mapper-locations:
-      classpath:com/xino/serviceusercenter/**/dao/mapper/*.xml
+     \- classpath:com/xino/serviceusercenter/**/dao/mapper/*.xml
    type-aliases-package: com.xino.serviceusercenter.dao.bean
