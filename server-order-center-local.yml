@@ -31,6 +31,7 @@ spring:
     url: jdbc:mysql://192.168.1.160:3306/kms?&allowMultiQueries=true&useUnicode=true&autoReconnect=true&useOldAliasMetadataBehavior=true
     username: root
     password: 0591xino
+    
 ---
 #dev233
 spring:
