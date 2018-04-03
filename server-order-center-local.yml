@@ -34,7 +34,7 @@ spring:
 ---
 #dev233
 spring:
-  profiles: dev233
+  profiles: dev_233
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
@@ -44,7 +44,7 @@ spring:
 ---
 #dev250
 spring:
-  profiles: dev250
+  profiles: dev_250
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
