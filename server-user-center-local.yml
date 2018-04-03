@@ -2,10 +2,6 @@
 #数据库连接池配置
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.1.160:3306/kms?&allowMultiQueries=true&useUnicode=true&autoReconnect=true&useOldAliasMetadataBehavior=true
-    username: root
-    password: 0591xino
     tomcat:
       jmx-enabled: true
       test-while-idle: true
@@ -23,5 +19,36 @@ spring:
 mybatis:
    config-location: classpath:config/mybatis/mybatis-config.xml
    mapper-locations:
-     \- classpath:com/xino/serviceusercenter/**/dao/mapper/*.xml
-   type-aliases-package: com.xino.serviceusercenter.dao.bean
+     \- classpath:com/xino/client/**/dao/mapper/*.xml
+   type-aliases-package: com.xino.client.dao.bean
+---
+#本地配置
+spring:
+  profiles: local
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.160:3306/kms?&allowMultiQueries=true&useUnicode=true&autoReconnect=true&useOldAliasMetadataBehavior=true
+    username: root
+    password: 0591xino
+
+---
+#dev233
+spring:
+  profiles: dev233
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.160:3306/kms?&allowMultiQueries=true&useUnicode=true&autoReconnect=true&useOldAliasMetadataBehavior=true
+    username: root
+    password: 0591xino
+---
+#dev250
+spring:
+  profiles: dev250
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.160:3306/kms?&allowMultiQueries=true&useUnicode=true&autoReconnect=true&useOldAliasMetadataBehavior=true
+    username: root
+    password: 0591xino
