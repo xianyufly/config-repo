@@ -25,5 +25,3 @@ mybatis:
    mapper-locations:
       - classpath:com/xino/eurekaclient/**/dao/mapper/*.xml
    type-aliases-package: com.xino.eurekaclient.dao.bean
-server:
-  port: 8080
