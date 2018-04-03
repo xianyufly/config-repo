@@ -1,7 +1,22 @@
 #公共配置
-# mybatis 配置
-mybatis:
-   config-location: classpath:config/mybatis/mybatis-config.xml
-   mapper-locations:
-      - classpath:com/xino/serviceusercenter/**/dao/mapper/*.xml
-   type-aliases-package: com.xino.serviceusercenter.dao.bean
+#数据库连接池配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.160:3306/kms?&allowMultiQueries=true&useUnicode=true&autoReconnect=true&useOldAliasMetadataBehavior=true
+    username: root
+    password: 0591xino
+    tomcat:
+      jmx-enabled: true
+      test-while-idle: true
+      test-on-borrow: true
+      test-on-return: false
+      validation-interval: 30000
+      validation-query: select 1
+      time-between-eviction-runs-millis: 30000
+      tomcat.max-active: 5
+      tomcat.initial-size: 1
+      tomcat.max-wait: -1
+      tomcat.min-evictable-idle-time-millis: 30000
+      tomcat.min-idle: 20
+
