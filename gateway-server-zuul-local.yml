@@ -2,9 +2,9 @@ hello: 12349
 zuul:
   ignored-services: "*"            # 设置忽略的服务，即配置后将不会被路由（但对于明确配置在路由中的，将不会被忽略）
   routes:
-   #say_hi:                       # 基于 URL 的映射（这里自定义路由的名字为 api-cal-url，它可任意指定，唯一即可）
-      #path: /say_hi/**             # # http://127.0.0.1:4100/cal/add?a=7&b=17会路由至http://127.0.0.1:2100/add?a=7&b=17
-      #serviceId: SERVICE_HI
-   #SERVICE_HI:              # 基于 ServiceId 的映射（自定义路由的名字）
-      #path: /service_hi/**             # http://127.0.0.1:4100/caladd/add?a=6&b=16会路由至CalculatorServer服务的/add?a=6&b=16
+   say_hi:                       # 基于 URL 的映射（这里自定义路由的名字为 api-cal-url，它可任意指定，唯一即可）
+      path: /say_hi/**             # # http://127.0.0.1:4100/cal/add?a=7&b=17会路由至http://127.0.0.1:2100/add?a=7&b=17
+      serviceId: SERVICE_HI
+   SERVICE_HI:              # 基于 ServiceId 的映射（自定义路由的名字）
+      path: /service_hi/**             # http://127.0.0.1:4100/caladd/add?a=6&b=16会路由至CalculatorServer服务的/add?a=6&b=16
       #serviceId: CalculatorServer
