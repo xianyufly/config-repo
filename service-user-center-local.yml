@@ -21,7 +21,7 @@ mybatis:
    mapper-locations:
     \- classpath:com/xino/client/**/dao/mapper/*.xml
    type-aliases-package: com.xino.client.dao.bean
-\-\-\-
+---
 #本地配置
 spring:
   profiles: local
@@ -39,7 +39,7 @@ spring:
     url: jdbc:mysql://192.168.1.160:3306/kms?&allowMultiQueries=true&useUnicode=true&autoReconnect=true&useOldAliasMetadataBehavior=true
     username: root
     password: 0591xino
-\-\-\-
+---
 #dev250
 spring:
   profiles: dev_250
