@@ -19,13 +19,12 @@ spring:
 mybatis:
    config-location: classpath:config/mybatis-config.xml
    mapper-locations:
-     - classpath:com/xino/client/**/dao/mapper/*.xml
+    \- classpath:com/xino/client/**/dao/mapper/*.xml
    type-aliases-package: com.xino.client.dao.bean
 ---
 #本地配置
 spring:
   profiles: local
-spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://192.168.1.160:3306/kms?&allowMultiQueries=true&useUnicode=true&autoReconnect=true&useOldAliasMetadataBehavior=true
@@ -35,7 +34,6 @@ spring:
 #dev233
 spring:
   profiles: dev_233
-spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://192.168.1.160:3306/kms?&allowMultiQueries=true&useUnicode=true&autoReconnect=true&useOldAliasMetadataBehavior=true
@@ -45,7 +43,6 @@ spring:
 #dev250
 spring:
   profiles: dev_250
-spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://192.168.1.160:3306/kms?&allowMultiQueries=true&useUnicode=true&autoReconnect=true&useOldAliasMetadataBehavior=true
