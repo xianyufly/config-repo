@@ -31,6 +31,15 @@ spring:
     username: root
     password: 0591xino
 ---
+#测试配置
+spring:
+  profiles: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.160:3306/kms?&allowMultiQueries=true&useUnicode=true&autoReconnect=true&useOldAliasMetadataBehavior=true
+    username: root
+    password: 0591xino
+---
 #dev233
 spring:
   profiles: dev_233
