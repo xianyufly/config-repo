@@ -1,5 +1,5 @@
-#¹«¹²ÅäÖÃ Õâ¸öÎÄ¼şÊÇÀı×Ó ÅäÖÃ´ÓÔ¶¶Ë·şÎñÆ÷¼ÓÔØ
-#Êı¾İ¿âÁ¬½Ó³ØÅäÖÃ
+#å…¬å…±é…ç½® è¿™ä¸ªæ–‡ä»¶æ˜¯ä¾‹å­ é…ç½®ä»è¿œç«¯æœåŠ¡å™¨åŠ è½½
+#æ•°æ®åº“è¿æ¥æ± é…ç½®
 spring:
   datasource:
     tomcat:
@@ -15,14 +15,14 @@ spring:
       tomcat.max-wait: -1
       tomcat.min-evictable-idle-time-millis: 30000
       tomcat.min-idle: 20
-# mybatis ÅäÖÃ
+# mybatis é…ç½®
 mybatis:
    config-location: classpath:config/mybatis/mybatis-config.xml
    mapper-locations:
      \- classpath:com/xino/client/**/dao/mapper/*.xml
    type-aliases-package: com.xino.client.dao.bean
 ---
-#±¾µØÅäÖÃ
+#æœ¬åœ°é…ç½®
 spring:
   profiles: local
 spring:
@@ -31,7 +31,15 @@ spring:
     url: jdbc:mysql://192.168.1.160:3306/kms?&allowMultiQueries=true&useUnicode=true&autoReconnect=true&useOldAliasMetadataBehavior=true
     username: root
     password: 0591xino
-
+---
+#æµ‹è¯•é…ç½®
+spring:
+  profiles: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.160:3306/kms?&allowMultiQueries=true&useUnicode=true&autoReconnect=true&useOldAliasMetadataBehavior=true
+    username: root
+    password: 0591xino
 ---
 #dev233
 spring:
